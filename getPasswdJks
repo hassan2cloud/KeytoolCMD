@@ -1,0 +1,10 @@
+set serveroutput on
+declare
+spass varchar2(30);
+kpass varchar2(30);
+begin
+ad_jar.get_jripasswords(spass, kpass);
+dbms_output.put_line(spass);
+dbms_output.put_line(kpass);
+end;
+/
